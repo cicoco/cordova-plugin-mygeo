@@ -27,6 +27,13 @@ var PositionError = require('./PositionError');
 // So we use additional map and own ids to return watch id synchronously.
 var pluginToNativeWatchMap = {};
 
+var geolocation = {
+    getCurrentPosition2: function(success, error, args) {
+        exec(success, error, "Geolocation", "getCurrentPosition2", args);
+    },
+}
+module.exports = geolocation;
+
 module.exports = {
     getCurrentPosition: function (success, error, args) {
         var win = function () {
@@ -39,9 +46,6 @@ module.exports = {
             }
         };
         exec(win, fail, 'Geolocation', 'getPermission', []);
-    },
-    getCurrentPosition2: function(success, error, args) {
-        exec(success, error, "Geolocation", "getCurrentPosition2", args);
     },
     watchPosition: function (success, error, args) {
         var pluginWatchId = utils.createUUID();
