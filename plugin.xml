@@ -21,15 +21,15 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:rim="http://www.blackberry.com/ns/widgets"
 xmlns:android="http://schemas.android.com/apk/res/android"
-           id="cordova-plugin-mygeo"
+           id="cordova-plugin-geolocation"
       version="1.0.0">
 
     <name>Geolocation</name>
     <description>Cordova Geolocation Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,geolocation</keywords>
-    <repo>https://github.com/cicoco/cordova-plugin-mygeo</repo>
-    <issue>https://github.com/cicoco/cordova-plugin-mygeo/issues</issue>
+    <repo>https://github.com/apache/cordova-plugin-geolocation</repo>
+    <issue>https://github.com/apache/cordova-plugin-geolocation/issues</issue>
 
     <engines>
         <engine name="cordova-android" version=">=6.3.0" />
@@ -52,8 +52,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </config-file>
 
         <source-file src="src/android/Geolocation.java" target-dir="src/org/apache/cordova/geolocation/" />
-        <source-file src="src/android/IGPSListener.java" target-dir="src/org/apache/cordova/geolocation/" />
-        <source-file src="src/android/LocationClient.java" target-dir="src/org/apache/cordova/geolocation/" />
 
         <js-module src="www/android/geolocation.js" name="geolocation">
             <clobbers target="navigator.geolocation" />

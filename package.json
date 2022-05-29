@@ -1,17 +1,17 @@
 {
-  "name": "cordova-plugin-mygeo",
+  "name": "cordova-plugin-geolocation",
   "version": "1.0.0",
   "description": "Cordova Geolocation Plugin",
   "cordova": {
-    "id": "cordova-plugin-mygeo",
+    "id": "cordova-plugin-geolocation",
     "platforms": [
       "android",
       "ios",
       "windows"
     ]
   },
-  "repository": "github:cicoco/cordova-plugin-mygeo",
-  "bugs": "https://github.com//cicoco/cordova-plugin-mygeo/issues",
+  "repository": "github:apache/cordova-plugin-geolocation",
+  "bugs": "https://github.com/apache/cordova-plugin-geolocation/issues",
   "keywords": [
     "cordova",
     "geolocation",

@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-mygeo-tests",
+  "name": "cordova-plugin-geolocation-tests",
   "version": "1.0.0",
   "description": "",
   "cordova": {
-    "id": "cordova-plugin-mygeo-tests",
+    "id": "cordova-plugin-geolocation-tests",
     "platforms": []
   },
   "keywords": [

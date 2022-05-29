@@ -40,9 +40,7 @@ module.exports = {
         };
         exec(win, fail, 'Geolocation', 'getPermission', []);
     },
-    getCurrentPosition2: function(success, error, args) {
-        exec(success, error, "Geolocation", "getCurrentPosition2", args);
-    },
+
     watchPosition: function (success, error, args) {
         var pluginWatchId = utils.createUUID();
 
